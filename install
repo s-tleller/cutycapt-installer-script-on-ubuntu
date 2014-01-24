@@ -8,11 +8,10 @@ sudo apt-get install xfs xfonts-scalable xfonts-100dpi -y
 sudo apt-get install libgl1-mesa-dri -y
 sudo apt-get install subversion libqt4-webkit libqt4-dev g++ -y
 
-mkdir ~/scripts
-cd ~/scripts
-#svn co https://cutycapt.svn.sourceforge.net/svnroot/cutycapt
+mkdir /opt/scripts
+cd /opt/scripts
 svn co https://svn.code.sf.net/p/cutycapt/code/CutyCapt
-cd cutycapt/CutyCapt
+cd CutyCapt
 
 qmake
 make
