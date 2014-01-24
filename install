@@ -10,7 +10,8 @@ sudo apt-get install subversion libqt4-webkit libqt4-dev g++ -y
 
 mkdir ~/scripts
 cd ~/scripts
-svn co https://cutycapt.svn.sourceforge.net/svnroot/cutycapt
+#svn co https://cutycapt.svn.sourceforge.net/svnroot/cutycapt
+svn co https://svn.code.sf.net/p/cutycapt/code/CutyCapt
 cd cutycapt/CutyCapt
 
 qmake
