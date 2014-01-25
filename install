@@ -8,12 +8,12 @@ sudo apt-get install xfs xfonts-scalable xfonts-100dpi -y
 sudo apt-get install libgl1-mesa-dri -y
 sudo apt-get install subversion libqt4-webkit libqt4-dev g++ -y
 
-mkdir /opt/scripts
+sudo mkdir /opt/scripts
 cd /opt/scripts
-svn co https://svn.code.sf.net/p/cutycapt/code/CutyCapt
+sudo svn co https://svn.code.sf.net/p/cutycapt/code/CutyCapt
 cd CutyCapt
 
-qmake
-make
+sudo qmake
+sudo make
 
 xvfb-run --server-args="-screen 0, 1024x768x24" ./CutyCapt --url=http://www.google.com --out=example.png
